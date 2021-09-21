@@ -10,9 +10,10 @@ body{
     width: 100%;
     margin: 50px;
     gap: 30px;
+    column-count: 3;
 }
-.fill-all {
-    column-fill: auto;
+p {
+    grid-column: span 2;
 }
 .about img {
     grid-column: span 2;

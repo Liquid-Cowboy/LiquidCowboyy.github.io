@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(44, 12, 87);
+    color: chartreuse;
+    
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    margin: 50px;
+    gap: 30px;
+}
+.fill-all {
+    column-fill: auto;
+}
+.about img {
+    grid-column: span 2;
+    width: 100%;
+}

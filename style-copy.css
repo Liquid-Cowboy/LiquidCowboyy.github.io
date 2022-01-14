@@ -1,0 +1,201 @@
+/*
+selecteur(s) {
+    propriété : valeur;
+}
+*/
+@font-face {
+    font-family: "Typefesse Master";
+    src: url("/fonts/Typefesse_Claire-Obscure.eot") format("embedded-opentype"),
+        url("/fonts/Typefesse_Claire-Obscure.woff2") format("woff2"),
+        url("/fonts/Typefesse_Claire-Obscure.woff") format("woff");
+}
+
+
+.google-font {
+    font-family: 'Spectral', serif;
+}
+
+.web-font {
+    font-family: 'Typefesse Master';
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: chartreuse;
+    margin: 50px;
+    background-color: rgb(44, 12, 87);
+}
+.Aboutme {
+    padding: 30px;
+    grid-column: span 4;
+    width: 100%;
+    margin-top: 20px;
+    line-height: 0;
+    color: rgb(44, 12, 87);
+}
+.aboutbox {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    height: 100%;
+    
+    grid-column: span 4;
+    color: rgb(44, 12, 87);
+   background-color: chartreuse;
+   border-radius: 20px;
+}
+
+.aboutboxtext {
+    column-count: 2;
+    grid-column: span 4;
+    padding: 30px;
+    padding-top: 0;
+    grid-column: span 2;
+}
+   
+.CV {
+    font-size: 10pt;
+    padding-top: 80px;
+    font-family: 'Roboto Slab', serif;
+    grid-column: 1/ span 7;
+}
+.CVtitle {
+    padding-top: 0;
+    margin-top: -60px;
+}
+.cvimage {
+    box-sizing: border-box;
+    position: relative;
+    object-fit:cover;
+    object-position: 50% 10%;
+    width: 100%;
+    grid-column: span 3;
+    border-radius: 20px;
+    border-color: chartreuse;
+    border-style:solid;
+    border-width: 5px;
+}
+
+.cvtext {
+    column-count: 2;
+}
+
+.center {
+    display: grid;
+    margin-left: 30px;
+    font-family: sans-serif;
+    color: rgb(126, 252, 0);
+    font-size: 10pt;
+    grid-template-columns: repeat(7, 200px);
+    grid-template-rows: repeat(2, 410px);
+    gap: 10px;
+}
+
+.image {
+    grid-column: span 2;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+}
+
+
+.overlay {
+    position: absolute;
+    opacity: 90%;
+    transition: 0.4s;
+}
+
+.text {
+    font-family: 'Holtwood One SC', serif;
+    letter-spacing: 5px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: cornsilk;
+    font-size: 25pt;
+}
+
+
+h1{
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-family: 'Holtwood One SC', serif;
+    color: rgb(157, 255, 0);
+
+}
+
+.title {
+    font-family: 'Holtwood One SC', serif;
+    line-height: 50pt;
+    font-size: 60px;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.LI {
+    font-size: 170px;
+    line-height: 140px;
+}
+
+.QUID {
+
+    line-height: 70px;
+}
+
+.COW {
+    font-size: 63px;
+}
+
+.BOY {
+    font-size: 72px;
+}
+
+.underscore {
+    letter-spacing: -5px;
+    line-height: 20px;
+}
+
+.artwork {
+    font-family: 'Holtwood One SC', serif;
+    font-weight: lighter;
+    letter-spacing: -20px;
+    font-size: 48px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.artwork2 {
+    display: none;
+}
+
+
+.image:hover .overlay {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .artwork {
+        display: none;
+    }
+
+    .artwork2 {
+        font-size: 10pt;
+        text-align: right;
+        margin: 0;
+    }
+}

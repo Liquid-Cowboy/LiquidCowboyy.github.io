@@ -2,6 +2,27 @@ body {
     background-color: rgb(44, 12, 87);
 }
 
+.interactivemenu {
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr );
+    gap: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.buttonlink {
+    color: chartreuse;
+    text-transform: uppercase;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-left: 0;
+    padding-right:0 ;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 20px;
+    border-style: solid ;
+}
+
 .gallery {
     grid-auto-flow: dense;
     height: auto;
@@ -35,6 +56,29 @@ h1 {
     font-family: 'Holtwood One SC', serif;
     color: rgb(157, 255, 0);
     line-height: 50pt;
+}
+
+h2 {
+    margin: 0%;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-family: 'Holtwood One SC', serif;
+    color: rgb(157, 255, 0);
+    line-height: 30px;
+}
+
+.description {
+    font-family: 'Roboto Slab', serif;
+    grid-column: span 2;
+    color: rgb(157, 255, 0);
+    column-count: 2;
+    font-size: 16px
+}
+
+.space {
+    grid-column: span 4;
+    height: 250px;
 }
 
 .video  {

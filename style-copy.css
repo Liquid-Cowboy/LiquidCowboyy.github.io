@@ -53,6 +53,27 @@ body {
     grid-column: span 2;
 }
    
+.contactsboxtext {
+
+    grid-column: span 4;
+    padding: 30px;
+    padding-top: 0;
+    font-size: 20pt;
+
+}
+
+.contactsbox {
+    margin-top: 200px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    height: 100%;
+    
+    grid-column: 2/ 7;
+    color: rgb(44, 12, 87);
+   background-color: chartreuse;
+   border-radius: 20px;
+}
+
 .CV {
     font-size: 10pt;
     padding-top: 80px;
@@ -78,6 +99,27 @@ body {
 
 .cvtext {
     column-count: 2;
+}
+
+.interactivemenu {
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr );
+    gap: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.buttonlink {
+    color: chartreuse;
+    text-transform: uppercase;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-left: 0;
+    padding-right:0 ;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 20px;
+    border-style: solid ;
 }
 
 .center {
